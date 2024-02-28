@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="section-login">
+        <div class="icon-login">
+          <img src="./img/acceso.png" alt="" />
+          <h1>Iniciar Sesion</h1>
+        </div>
+        <div class="input-user">
+          <input id="user" type="text" class="input" placeholder="" />
+          <label for="user">Username</label>
+          <p id="user_error" class="error_mensage">usuario incorrecto</p>
+        </div>
+        <div class="input-pass">
+          <input id="pass" type="password" class="input" placeholder="" />
+          <label for="pass">Password</label>
+          <span id="btn_password" class="eyes">
+            <img id="img_eyes" src="./img/vista.png" alt="" />
+          </span>
+          <p id="pass_error" class="error_mensage">contraseña incorrecta</p>
+        </div>
+        <div class="btn-login">
+          <button onclick="login()" type="submit">Iniciar Sesion</button>
+        </div>
+      </div>
+    </main>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
