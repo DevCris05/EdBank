@@ -8,7 +8,7 @@ const pass_error = document.getElementById("pass_error");
 
 function login() {
   if (user.value === user_db && pass.value === pass_db) {
-    location.replace("./html/dashboard.html");
+    window.location.replace("./html/dashboard.html");
   } else if (user.value !== user_db && pass.value !== pass_db) {
     pass.style.borderColor = "red";
     pass_error.style.opacity = "1";
@@ -26,7 +26,7 @@ function login() {
 const btn_eye = document.querySelector("#btn_password");
 const eyes = document.querySelector("#img_eyes");
 
-btn_eye.addEventListener("click", (e) => {
+btn_eye.addEventListener("click", () => {
   if (pass.type === "password") {
     pass.type = "text";
     eyes.src = "./img/ojo.png";
